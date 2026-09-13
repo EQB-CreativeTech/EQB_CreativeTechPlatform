@@ -15,9 +15,9 @@ git push origin main
 
 ## 2. Turn on GitHub Pages
 
-1. Repo → **Settings** → **Pages**.
-2. **Build and deployment** → Source: **GitHub Actions** (not “Deploy from branch”).
-3. Push to `main` or run **Deploy to GitHub Pages** under **Actions**.
+1. Push to `main` and wait until **Actions** → **Deploy to GitHub Pages** is green (publishes the `gh-pages` branch).
+2. Repo → **Settings** → **Pages**.
+3. **Source:** **Deploy from a branch** → branch **`gh-pages`** → **`/ (root)`** → **Save**.
 
 `index.html` redirects to `eqbcreativetech.home.html`.
 

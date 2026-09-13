@@ -21,9 +21,10 @@ git remote set-url origin git@github.com:EQB-CreativeTech/EQB_CreativeTechPlatfo
 
 ## Enable GitHub Pages (one-time)
 
-1. Repo → **Settings** → **Pages**.
-2. **Build and deployment** → **Source:** **GitHub Actions**.
-3. **Actions** → **Deploy to GitHub Pages** → confirm a green run on `main`.
+1. Wait for **Actions** → **Deploy to GitHub Pages** to finish green on `main` (creates the `gh-pages` branch).
+2. Repo → **Settings** → **Pages**.
+3. **Build and deployment** → **Source:** **Deploy from a branch**.
+4. **Branch:** `gh-pages` → folder **`/ (root)`** → **Save**.
 
 ## Newsletter API (after site is live)
 
