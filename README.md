@@ -5,7 +5,7 @@ Official marketing site for **EQB Creative Tech**: IT Academy, TNPSC Academy, an
 | | |
 |---|---|
 | **Organization** | [EQB-CreativeTech on GitHub](https://github.com/EQB-CreativeTech) |
-| **Live site** | `https://eqb-creativetech.github.io/landing-page/` *(after Pages deploy)* |
+| **Live site** | [eqb-creativetech.github.io/EQB_CreativeTechPlatform](https://eqb-creativetech.github.io/EQB_CreativeTechPlatform/) |
 | **Stack** | HTML, CSS, Bootstrap Icons, vanilla JavaScript |
 
 ## Pages

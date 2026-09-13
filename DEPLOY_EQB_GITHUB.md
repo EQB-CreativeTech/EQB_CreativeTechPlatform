@@ -1,52 +1,31 @@
 # Deploy to EQB-CreativeTech on GitHub
 
 Target org: **[EQB-CreativeTech](https://github.com/EQB-CreativeTech)**  
-Recommended repo name: **`landing-page`**  
-Live URL after deploy: **https://eqb-creativetech.github.io/landing-page/**
+Repository: **[EQB_CreativeTechPlatform](https://github.com/EQB-CreativeTech/EQB_CreativeTechPlatform)**  
+Live URL: **https://eqb-creativetech.github.io/EQB_CreativeTechPlatform/**
 
-## A. Create the repository (browser)
-
-1. Sign in as a member of **EQB-CreativeTech**.
-2. Open [New repository](https://github.com/organizations/EQB-CreativeTech/repositories/new) (org) or **Repositories → New** on the org profile.
-3. Settings:
-   - **Repository name:** `landing-page`
-   - **Description:** `EQB Creative Tech — official landing page (IT, TNPSC, Art Studio)`
-   - **Public**
-   - Do **not** add README, .gitignore, or license (this project already has them).
-4. Click **Create repository**.
-
-## B. Push this project (terminal)
-
-From this folder:
+## Push updates (terminal)
 
 ```bash
 cd "/Users/mohanamanjula.s/Mohana-MY/other_sts/z-EQB Creative Tech/1. Landing-Page"
 
-git remote add origin https://github.com/EQB-CreativeTech/landing-page.git
-git push -u origin main
+git remote set-url origin https://github.com/EQB-CreativeTech/EQB_CreativeTechPlatform.git
+git push origin main
 ```
 
-If `origin` already exists with a wrong URL:
+SSH:
 
 ```bash
-git remote set-url origin https://github.com/EQB-CreativeTech/landing-page.git
-git push -u origin main
+git remote set-url origin git@github.com:EQB-CreativeTech/EQB_CreativeTechPlatform.git
 ```
 
-Use SSH if you prefer:
-
-```bash
-git remote add origin git@github.com:EQB-CreativeTech/landing-page.git
-```
-
-## C. Enable GitHub Pages
+## Enable GitHub Pages (one-time)
 
 1. Repo → **Settings** → **Pages**.
 2. **Build and deployment** → **Source:** **GitHub Actions**.
-3. Open **Actions** → run **Deploy to GitHub Pages** (or wait for the push on `main` to trigger it).
-4. When green, open **Settings → Pages** for the published URL.
+3. **Actions** → **Deploy to GitHub Pages** → confirm a green run on `main`.
 
-## D. Newsletter API (after site is live)
+## Newsletter API (after site is live)
 
 GitHub Pages does not run Node. Use Render + Supabase + Gmail — see [NEWSLETTER_SETUP.md](NEWSLETTER_SETUP.md).
 
@@ -58,7 +37,7 @@ CORS_ORIGINS=https://eqb-creativetech.github.io
 
 In `js/config.local.js`, set your Render subscribe URL and push again.
 
-## E. Repo settings (recommended)
+## Repo settings (recommended)
 
-- **Settings → General → Social preview:** upload a 1280×640 brand image.
-- **About** (right sidebar on repo home): add website `https://eqb-creativetech.github.io/landing-page/` and topics: `landing-page`, `education`, `tnpsc`, `eqb-creative-tech`.
+- **About** → Website: `https://eqb-creativetech.github.io/EQB_CreativeTechPlatform/`
+- Topics: `eqb-creative-tech`, `education`, `tnpsc`, `landing-page`
