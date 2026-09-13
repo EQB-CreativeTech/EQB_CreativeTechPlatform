@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Studio | EQB Creative Tech</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/academy.css">
+</head>
+<body class="academy-page" data-page="art-studio">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top academy-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3 text-primary" href="./eqbcreativetech.home.html">
+                EQB <span>Creative Tech</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul id="navLinks" class="navbar-nav mx-auto academy-nav-links"></ul>
+
+                <div class="d-flex gap-2">
+                    <button class="btn btn-outline-primary" type="button" data-auth-open="login">Login</button>
+                    <a id="navCta" class="btn btn-primary" href="#collections">Explore Gallery</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="academy-hero">
+            <div id="academyHero" class="container"></div>
+        </section>
+
+        <section id="tracks" class="academy-section">
+            <div id="academyTracks" class="container"></div>
+        </section>
+
+        <section id="outcomes" class="academy-section academy-section-alt">
+            <div id="academyOutcomes" class="container"></div>
+        </section>
+
+        <section class="academy-cta">
+            <div id="academyCta" class="container"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="footer-logo">EQB</h3>
+                    <p id="footerAbout"></p>
+                </div>
+                <div>
+                    <h5>Quick Links</h5>
+                    <ul id="footerQuickLinks" class="footer-links"></ul>
+                </div>
+                <div>
+                    <h5>Resources</h5>
+                    <ul id="footerResourceLinks" class="footer-links"></ul>
+                </div>
+                <div>
+                    <h5>Contact</h5>
+                    <ul id="footerContactInfo" class="footer-links"></ul>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p id="footerCopyright"></p>
+                <div id="socialIcons" class="social-icons"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/pages/art-studio.js"></script>
+    <script src="js/content-loader.js"></script>
+    <script src="js/content.js"></script>
+    <script src="js/academy-content.js"></script>
+    <script src="js/chrome.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+// Copy to js/config.local.js (gitignored) and set your live API URL after deploy.
+// Load this file in HTML immediately after js/data.js.
+
+window.EQB_DATA.newsletter.endpoint = "https://your-app.onrender.com/api/newsletter/subscribe";
+
+// Optional: when your static site is on a custom domain, the API CORS_ORIGINS env must include it.
